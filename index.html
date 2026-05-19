@@ -1,107 +1,165 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Madrank — Portfolio Développeur</title>
-    <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        body { font-family: system-ui, -apple-system, sans-serif; background: #0d1117; color: #c9d1d9; line-height: 1.6; }
-        .container { max-width: 900px; margin: 0 auto; padding: 2rem; }
-        header { text-align: center; padding: 4rem 0 3rem; }
-        .avatar { width: 120px; height: 120px; border-radius: 50%; background: #21262d; margin: 0 auto 1rem; display: flex; align-items: center; justify-content: center; font-size: 3rem; border: 3px solid #58a6ff; }
-        h1 { font-size: 2.5rem; color: #f0f6fc; }
-        .subtitle { color: #8b949e; font-size: 1.1rem; margin-top: .5rem; }
-        .tagline { color: #58a6ff; font-size: .95rem; margin-top: .3rem; }
-        .section { margin: 3rem 0; }
-        h2 { color: #58a6ff; margin-bottom: 1.5rem; font-size: 1.4rem; border-bottom: 1px solid #21262d; padding-bottom: .5rem; }
-        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(380px, 1fr)); gap: 1.5rem; }
-        .card { background: #161b22; border: 1px solid #30363d; border-radius: 12px; padding: 1.5rem; transition: border-color .2s; }
-        .card:hover { border-color: #58a6ff; }
-        .card h3 { color: #f0f6fc; margin-bottom: .5rem; }
-        .card .stack { display: flex; gap: .4rem; flex-wrap: wrap; margin: .8rem 0; }
-        .card .stack span { background: #21262d; padding: .15rem .6rem; border-radius: 12px; font-size: .75rem; border: 1px solid #30363d; }
-        .card p { color: #8b949e; font-size: .9rem; margin-bottom: 1rem; }
-        .card .links { display: flex; gap: .8rem; }
-        .card .links a { color: #58a6ff; text-decoration: none; font-size: .85rem; font-weight: 600; }
-        .card .links a:hover { text-decoration: underline; }
-        .skills { display: flex; flex-wrap: wrap; gap: .5rem; justify-content: center; margin: 2rem 0; }
-        .skills span { background: #21262d; padding: .4rem 1rem; border-radius: 20px; font-size: .85rem; border: 1px solid #30363d; }
-        footer { text-align: center; padding: 3rem 0; color: #484f58; font-size: .85rem; }
-        footer a { color: #58a6ff; text-decoration: none; }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>JB — Développeur Web</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <div class="container">
-        <header>
-            <div class="avatar">👨‍💻</div>
-            <h1>Madrank</h1>
-            <p class="subtitle">Développeur — Diplômé 2025</p>
-            <p class="tagline">Python • JavaScript • DevOps • Data</p>
-        </header>
 
-        <section class="section">
-            <h2>⚡ Compétences</h2>
-            <div class="skills">
-                <span>Python</span>
-                <span>TypeScript</span>
-                <span>React</span>
-                <span>Node.js</span>
-                <span>Flask / FastAPI</span>
-                <span>Docker</span>
-                <span>Terraform</span>
-                <span>AWS / GCP</span>
-                <span>CI/CD</span>
-                <span>Prometheus</span>
-                <span>PostgreSQL</span>
-                <span>scikit-learn</span>
-                <span>Streamlit</span>
-                <span>Git</span>
-            </div>
-        </section>
-
-        <section class="section">
-            <h2>📦 Projets</h2>
-            <div class="grid">
-                <div class="card">
-                    <h3>🔧 DevOps Pipeline</h3>
-                    <div class="stack">
-                        <span>Python</span><span>Flask</span><span>Docker</span>
-                        <span>GitHub Actions</span><span>Terraform</span><span>AWS</span>
-                        <span>Prometheus</span><span>Grafana</span>
-                    </div>
-                    <p>Pipeline CI/CD complet : lint → test → build Docker → déploiement Terraform sur AWS, avec monitoring Prometheus + Grafana.</p>
-                    <div class="links">
-                        <a href="https://madrank.github.io/devops-pipeline">🌐 Live</a>
-                        <a href="https://github.com/Madrank/devops-pipeline">GitHub</a>
-                    </div>
-                </div>
-                <div class="card">
-                    <h3>📊 Trend Scraper</h3>
-                    <div class="stack">
-                        <span>Python</span><span>FastAPI</span><span>scikit-learn</span>
-                        <span>Streamlit</span><span>Pandas</span><span>Plotly</span>
-                    </div>
-                    <p>Pipeline data : scraper d'offres d'emploi tech → API REST → analyse ML (TF-IDF, K-Means) → dashboard interactif.</p>
-                    <div class="links">
-                        <a href="https://madrank.github.io/trend-scraper">🌐 Live</a>
-                        <a href="https://github.com/Madrank/trend-scraper">GitHub</a>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="section">
-            <h2>📫 Contact</h2>
-            <p style="text-align:center;color:#8b949e;">
-                Retrouvez mes projets sur
-                <a href="https://github.com/Madrank" style="color:#58a6ff;">github.com/Madrank</a>
-            </p>
-        </section>
-
-        <footer>
-            Madrank © 2026 — Portfolio
-        </footer>
+  <!-- HERO -->
+  <section id="hero">
+    <div class="hero-bg"></div>
+    <nav>
+      <span class="nav-logo">JBxDev</span>
+      <ul class="nav-links">
+        <li><a href="#about">À propos</a></li>
+        <li><a href="#skills">Compétences</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <button class="burger" id="burger" aria-label="Menu">&#9776;</button>
+    </nav>
+    <div class="hero-content">
+      <p class="hero-tag">👋 Bienvenue sur mon portfolio</p>
+      <h1 class="hero-name">JB</h1>
+      <h2 class="hero-title">Développeur web en formation</h2>
+      <p class="hero-tagline">Je crée des sites web modernes<br />et des apps qui marchent.</p>
+      <div class="hero-btns">
+        <a href="#skills" class="btn btn-primary">Voir mes compétences</a>
+        <a href="#contact" class="btn btn-ghost">Me contacter</a>
+      </div>
     </div>
+    <div class="scroll-hint">
+      <span>Scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- MOBILE MENU -->
+  <div class="mobile-menu" id="mobileMenu">
+    <button class="close-menu" id="closeMenu">✕</button>
+    <ul>
+      <li><a href="#about" class="mob-link">À propos</a></li>
+      <li><a href="#skills" class="mob-link">Compétences</a></li>
+      <li><a href="#contact" class="mob-link">Contact</a></li>
+    </ul>
+  </div>
+
+  <!-- À PROPOS -->
+  <section id="about">
+    <div class="container">
+      <div class="section-label">— À propos</div>
+      <h3 class="section-title">Qui suis-je ?</h3>
+      <div class="about-grid">
+        <div class="about-text">
+          <p>
+            Je m'appelle <strong>JBxDev</strong>, développeur web et mobile diplomé d'un Titre Professionnel de niveau 5 (Bac+2) en développement web et mobile. Passionné par le code et la création digitale, je me spécialise dans le développement front-end, avec une appétence pour les interfaces utilisateur modernes et intuitives.
+            
+          </p>
+          <p>
+            J'apprends chaque jour à maîtriser les technologies du web : du HTML sémantique
+            au JavaScript interactif, en passant par Git pour versionner mon travail avec rigueur.
+          </p>
+          <p>
+            Mon objectif : intégrer une équipe ambitieuse et contribuer à des projets concrets
+            qui ont de l'impact.
+          </p>
+        </div>
+        <div class="about-stats">
+          <div class="stat-card">
+            <span class="stat-num">3+</span>
+            <span class="stat-label">Langages maîtrisés</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-num">100%</span>
+            <span class="stat-label">Motivation</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-num">∞</span>
+            <span class="stat-label">Curiosité</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- COMPÉTENCES -->
+  <section id="skills">
+    <div class="container">
+      <div class="section-label">— Compétences</div>
+      <h3 class="section-title">Ce que je sais faire</h3>
+      <div class="skills-grid">
+        <div class="skill-card" data-delay="0">
+          <div class="skill-icon">🌐</div>
+          <h4>HTML</h4>
+          <p>Structure sémantique, accessibilité, balises modernes HTML5.</p>
+          <div class="skill-bar"><div class="skill-fill" style="--pct: 85%"></div></div>
+        </div>
+        <div class="skill-card" data-delay="100">
+          <div class="skill-icon">🎨</div>
+          <h4>CSS</h4>
+          <p>Flexbox, Grid, animations, responsive design mobile-first.</p>
+          <div class="skill-bar"><div class="skill-fill" style="--pct: 78%"></div></div>
+        </div>
+        <div class="skill-card" data-delay="200">
+          <div class="skill-icon">⚡</div>
+          <h4>JavaScript</h4>
+          <p>DOM, événements, fetch API, ES6+, logique interactive.</p>
+          <div class="skill-bar"><div class="skill-fill" style="--pct: 65%"></div></div>
+        </div>
+        <div class="skill-card" data-delay="300">
+          <div class="skill-icon">🗂️</div>
+          <h4>Git</h4>
+          <p>Versionning, branches, commits propres, GitHub.</p>
+          <div class="skill-bar"><div class="skill-fill" style="--pct: 70%"></div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <div class="container">
+      <div class="section-label">— Contact</div>
+      <h3 class="section-title">Travaillons ensemble</h3>
+      <p class="contact-sub">
+        Je suis disponible pour des stages, des projets freelance ou simplement
+        pour échanger autour du développement web.
+      </p>
+      <div class="contact-links">
+        <a href="mailto:jb@exemple.com" class="contact-card">
+          <span class="contact-icon">📧</span>
+          <span class="contact-info">
+            <strong>Email</strong>
+            <small>jb@exemple.com</small>
+          </span>
+          <span class="contact-arrow">→</span>
+        </a>
+        <a href="https://github.com/" target="_blank" rel="noopener" class="contact-card">
+          <span class="contact-icon">🐙</span>
+          <span class="contact-info">
+            <strong>GitHub</strong>
+            <small>github.com/jb</small>
+          </span>
+          <span class="contact-arrow">→</span>
+        </a>
+        <a href="https://linkedin.com/" target="_blank" rel="noopener" class="contact-card">
+          <span class="contact-icon">💼</span>
+          <span class="contact-info">
+            <strong>LinkedIn</strong>
+            <small>linkedin.com/in/jb</small>
+          </span>
+          <span class="contact-arrow">→</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>Fait avec 💜 par <strong>JB</strong> — 2025</p>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
