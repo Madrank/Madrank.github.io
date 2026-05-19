@@ -1,165 +1,20 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="fr">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>JB — Développeur Web</title>
-  <link rel="stylesheet" href="style.css" />
-</head>
-<body>
-
-  <!-- HERO -->
-  <section id="hero">
-    <div class="hero-bg"></div>
-    <nav>
-      <span class="nav-logo">JBxDev</span>
-      <ul class="nav-links">
-        <li><a href="#about">À propos</a></li>
-        <li><a href="#skills">Compétences</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-      <button class="burger" id="burger" aria-label="Menu">&#9776;</button>
-    </nav>
-    <div class="hero-content">
-      <p class="hero-tag">👋 Bienvenue sur mon portfolio</p>
-      <h1 class="hero-name">JB</h1>
-      <h2 class="hero-title">Développeur web en formation</h2>
-      <p class="hero-tagline">Je crée des sites web modernes<br />et des apps qui marchent.</p>
-      <div class="hero-btns">
-        <a href="#skills" class="btn btn-primary">Voir mes compétences</a>
-        <a href="#contact" class="btn btn-ghost">Me contacter</a>
-      </div>
-    </div>
-    <div class="scroll-hint">
-      <span>Scroll</span>
-      <div class="scroll-line"></div>
-    </div>
-  </section>
-
-  <!-- MOBILE MENU -->
-  <div class="mobile-menu" id="mobileMenu">
-    <button class="close-menu" id="closeMenu">✕</button>
-    <ul>
-      <li><a href="#about" class="mob-link">À propos</a></li>
-      <li><a href="#skills" class="mob-link">Compétences</a></li>
-      <li><a href="#contact" class="mob-link">Contact</a></li>
-    </ul>
-  </div>
-
-  <!-- À PROPOS -->
-  <section id="about">
-    <div class="container">
-      <div class="section-label">— À propos</div>
-      <h3 class="section-title">Qui suis-je ?</h3>
-      <div class="about-grid">
-        <div class="about-text">
-          <p>
-            Je m'appelle <strong>JBxDev</strong>, développeur web et mobile diplomé d'un Titre Professionnel de niveau 5 (Bac+2) en développement web et mobile. Passionné par le code et la création digitale, je me spécialise dans le développement front-end, avec une appétence pour les interfaces utilisateur modernes et intuitives.
-            
-          </p>
-          <p>
-            J'apprends chaque jour à maîtriser les technologies du web : du HTML sémantique
-            au JavaScript interactif, en passant par Git pour versionner mon travail avec rigueur.
-          </p>
-          <p>
-            Mon objectif : intégrer une équipe ambitieuse et contribuer à des projets concrets
-            qui ont de l'impact.
-          </p>
-        </div>
-        <div class="about-stats">
-          <div class="stat-card">
-            <span class="stat-num">3+</span>
-            <span class="stat-label">Langages maîtrisés</span>
-          </div>
-          <div class="stat-card">
-            <span class="stat-num">100%</span>
-            <span class="stat-label">Motivation</span>
-          </div>
-          <div class="stat-card">
-            <span class="stat-num">∞</span>
-            <span class="stat-label">Curiosité</span>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- COMPÉTENCES -->
-  <section id="skills">
-    <div class="container">
-      <div class="section-label">— Compétences</div>
-      <h3 class="section-title">Ce que je sais faire</h3>
-      <div class="skills-grid">
-        <div class="skill-card" data-delay="0">
-          <div class="skill-icon">🌐</div>
-          <h4>HTML</h4>
-          <p>Structure sémantique, accessibilité, balises modernes HTML5.</p>
-          <div class="skill-bar"><div class="skill-fill" style="--pct: 85%"></div></div>
-        </div>
-        <div class="skill-card" data-delay="100">
-          <div class="skill-icon">🎨</div>
-          <h4>CSS</h4>
-          <p>Flexbox, Grid, animations, responsive design mobile-first.</p>
-          <div class="skill-bar"><div class="skill-fill" style="--pct: 78%"></div></div>
-        </div>
-        <div class="skill-card" data-delay="200">
-          <div class="skill-icon">⚡</div>
-          <h4>JavaScript</h4>
-          <p>DOM, événements, fetch API, ES6+, logique interactive.</p>
-          <div class="skill-bar"><div class="skill-fill" style="--pct: 65%"></div></div>
-        </div>
-        <div class="skill-card" data-delay="300">
-          <div class="skill-icon">🗂️</div>
-          <h4>Git</h4>
-          <p>Versionning, branches, commits propres, GitHub.</p>
-          <div class="skill-bar"><div class="skill-fill" style="--pct: 70%"></div></div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- CONTACT -->
-  <section id="contact">
-    <div class="container">
-      <div class="section-label">— Contact</div>
-      <h3 class="section-title">Travaillons ensemble</h3>
-      <p class="contact-sub">
-        Je suis disponible pour des stages, des projets freelance ou simplement
-        pour échanger autour du développement web.
-      </p>
-      <div class="contact-links">
-        <a href="mailto:jb@exemple.com" class="contact-card">
-          <span class="contact-icon">📧</span>
-          <span class="contact-info">
-            <strong>Email</strong>
-            <small>jb@exemple.com</small>
-          </span>
-          <span class="contact-arrow">→</span>
-        </a>
-        <a href="https://github.com/" target="_blank" rel="noopener" class="contact-card">
-          <span class="contact-icon">🐙</span>
-          <span class="contact-info">
-            <strong>GitHub</strong>
-            <small>github.com/jb</small>
-          </span>
-          <span class="contact-arrow">→</span>
-        </a>
-        <a href="https://linkedin.com/" target="_blank" rel="noopener" class="contact-card">
-          <span class="contact-icon">💼</span>
-          <span class="contact-info">
-            <strong>LinkedIn</strong>
-            <small>linkedin.com/in/jb</small>
-          </span>
-          <span class="contact-arrow">→</span>
-        </a>
-      </div>
-    </div>
-  </section>
-
-  <footer>
-    <p>Fait avec 💜 par <strong>JB</strong> — 2025</p>
-  </footer>
-
-  <script src="script.js"></script>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jean baptiste Madoire — Développeur Fullstack</title>
+    <meta property="og:image" content="https://bolt.new/static/og_default.png" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:image" content="https://bolt.new/static/og_default.png" />
+    <script type="module" crossorigin src="/assets/index-WLL2RqPH.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-BIdAihwW.css">
+  </head>
+  <body>
+    <div id="root"></div>
+  </body>
 </html>
